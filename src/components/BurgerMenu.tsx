@@ -6,6 +6,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Link from "next/link";
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,14 +35,22 @@ export const BurgerMenu = () => {
             }`}
           ></div>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="mt-2">
-          <DropdownMenuItem>Про Нас</DropdownMenuItem>
+        <DropdownMenuContent className="mt-4 mr-4 tracking-wide">
+          <DropdownMenuItem>
+            <Link href="#about">Про Нас</Link>
+          </DropdownMenuItem>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>Послуги</DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="#ourservices">Послуги</Link>
+          </DropdownMenuItem>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>Ціни</DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="#prices">Ціни</Link>
+          </DropdownMenuItem>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>Контакти</DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="#contacts">Контакти</Link>
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </nav>

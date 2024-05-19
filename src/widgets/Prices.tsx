@@ -203,7 +203,7 @@ export const Prices = () => {
     _setContentData("hygiene");
   }, []);
   return (
-    <section className="py-4 px-2 sm:py-8 xl:px-6 bg-[#CCDDFF]">
+    <section id="prices" className="py-4 px-2 sm:py-8 xl:px-6 bg-[#CCDDFF]">
       <div className="my-6 justify-center sm:flex-row flex flex-col gap-4 mx-4">
         <Button
           type="button"

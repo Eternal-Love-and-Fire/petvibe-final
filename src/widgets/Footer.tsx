@@ -1,47 +1,65 @@
 import Link from "next/link";
 import { BsInstagram, BsTelegram } from "react-icons/bs";
+import { CiMail } from "react-icons/ci";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
-const arrow = (
-  <svg
-    width="15"
-    height="15"
-    viewBox="0 0 15 15"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M7.14645 2.14645C7.34171 1.95118 7.65829 1.95118 7.85355 2.14645L11.8536 6.14645C12.0488 6.34171 12.0488 6.65829 11.8536 6.85355C11.6583 7.04882 11.3417 7.04882 11.1464 6.85355L8 3.70711L8 12.5C8 12.7761 7.77614 13 7.5 13C7.22386 13 7 12.7761 7 12.5L7 3.70711L3.85355 6.85355C3.65829 7.04882 3.34171 7.04882 3.14645 6.85355C2.95118 6.65829 2.95118 6.34171 3.14645 6.14645L7.14645 2.14645Z"
-      fill="currentColor"
-      fillRule="evenodd"
-      clipRule="evenodd"
-    ></path>
-  </svg>
-);
 export const Footer = () => {
   return (
-    <footer className="w-full p-2 pt-6 bg-sky-100 flex flex-col items-center gap-2">
-      <Link
-        href={`/`}
-        className="flex items-center animate-pulse hover:animate-none hover:duration-300 hover:text-blue-900"
-      >
-        {arrow} Back to Top
-      </Link>
-      <div className="flex items-center text-sm">
-        <address>
-          <strong>Київ, проспект Миколи Бажана 12</strong>
+    <footer className="xl:w-1/2 w-screen opacity-50 p-4 mx-auto flex gap-6 flex-col md:flex-row justify-around items-center text-base tracking-wide font-serif border-t-2 border-black mt-6">
+      <div className="w-full flex flex-col">
+        <address className="not-italic">
+            <Link
+            className="flex gap-1 hover:text-blue-900"
+              target="_blank"
+              href="https://maps.app.goo.gl/Hd5ERvv4RnHETKPe6"
+            >
+              <FaMapMarkerAlt />
+              просп. Миколи Бажана 12
+            </Link>
+          <p>Київ</p>
         </address>
-      
-        <a href="tel:+380986531088" className="px-4 py-2 tracking-wide">
-          <strong className="whitespace-nowrap">+380 98 653 10 88</strong>
-        </a>
-        <div className="p-1 flex gap-4 text-2xl rounded-md shadow-sm shadow-sky-400">
-          <a href="" className="hover:text-black text-sky-900 duration-300">
+        <time className="flex gap-1">
+          <p>Пн-Нд: 10:00 до 20:00</p>
+        </time>
+      </div>
+      <div className="flex w-full flex-col gap-2">
+        <div className="flex gap-3 text-xl">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/petvibe_ua?igsh=MWx4dG5yOW56b21vbg%3D%3D&utm_source=qr"
+            className="hover:text-black text-sky-900 duration-300 hover:opacity-100"
+          >
             <BsInstagram />
           </a>
-          <a href="" className="hover:text-black text-sky-900 duration-300">
+          <a
+            target="_blank"
+            href="https://t.me/petvibe_grooming"
+            className="hover:text-black text-sky-900 duration-300 hover:opacity-100"
+          >
             <BsTelegram />
           </a>
+          <a
+            target="_blank"
+            href="mailto:petvibe.info@gmail.com"
+            className="hover:text-black text-sky-900 duration-300 hover:opacity-100"
+          >
+            <CiMail />
+          </a>
         </div>
+        <a
+          href="mailto:petvibe.info@gmail.com"
+          target="_blank"
+          className="hover:text-blue-900 duration-300"
+        >
+          petvibe.info@gmail.com
+        </a>
+        <a
+          href="tel:+380986531088"
+          target="_blank"
+          className="hover:text-blue-900 duration-300"
+        >
+          0986531088
+        </a>
       </div>
     </footer>
   );

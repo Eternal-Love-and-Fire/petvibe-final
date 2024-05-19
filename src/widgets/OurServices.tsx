@@ -39,7 +39,7 @@ const service = {
 
 export const OurServices = () => {
   return (
-    <section className="min-h-[647px] my-28 sm:my-40 mb:20 sm:mb-32 mx-0 sm:mx-5 text-black">
+    <section id="ourservices" className="min-h-[647px] my-28 sm:my-40 mb:20 sm:mb-32 mx-0 sm:mx-5 text-black">
       <h2 className="text-[40px] tracking-wider text-center">
         {service.title}
       </h2>

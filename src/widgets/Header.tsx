@@ -36,10 +36,10 @@ export const Header = () => {
     >
       <Logo />
       <nav className="hidden lg:flex w-full justify-end gap-8 pr-8">
-        <UserLink to="/PetVibe-1/#about" title="Про Нас" />
-        <UserLink to="/PetVibe-1/#petservices" title="Послуги" />
-        <UserLink to="/PetVibe-1/#prices" title="Ціни" />
-        <UserLink to="/PetVibe-1/#contactus" title="Контакти" />
+        <UserLink to="#about" title="Про Нас" />
+        <UserLink to="#ourservices" title="Послуги" />
+        <UserLink to="#prices" title="Ціни" />
+        <UserLink to="#contacts" title="Контакти" />
         {/* <UserLink to="/PetVibe-1/#contactus" title="Відгуки" /> */}
         {/* <UserLink to="todo" title="Запис Онлайн" /> */}
       </nav>
