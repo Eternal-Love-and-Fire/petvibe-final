@@ -1,9 +1,12 @@
 import Image from "next/image";
-import dogwash from '../../public/dog-wash.png';
+import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 
 export const About = () => {
   return (
-    <section id="about" className="min-h-[647px] mt-[49px] mx-4 relative flex flex-wrap items-center px-4 xl:px-0 pt-[34px] xl:pt-0 sm:justify-center gap-6 2xl:gap-[134px] sm:flex-row flex-col border border-black text-black rounded-[20px] font-medium bg-[#CCF4FF]">
+    <section
+      id="about"
+      className="min-h-[647px] mt-[49px] mx-4 relative flex flex-wrap items-center px-4 xl:px-0 pt-[34px] xl:pt-0 sm:justify-center gap-6 2xl:gap-[134px] sm:flex-row flex-col border border-black text-black rounded-[20px] font-medium bg-[#CCF4FF]"
+    >
       <div className="w-[280px] h-[50px] absolute left-[-2px] md:left-[103px] top-[-28px] flex items-center justify-center rounded-[10px] border border-black bg-[#CCDDFF]">
         <span className="text-[30px] tracking-wide">Про нас</span>
       </div>
@@ -40,7 +43,9 @@ export const About = () => {
       </article>
       <article>
         <div className="mb-4 sm:mb-0">
-          <Image src={dogwash} alt="happy dog in petvide" className="rounded-[20px]"/>
+          <DirectionAwareHover>
+            <p className="font-bold text-xl">Тут може бути ваш любимець</p>
+          </DirectionAwareHover>
         </div>
       </article>
     </section>
