@@ -18,7 +18,7 @@ export const Button: React.FC<ButtonType> = ({
     return (
       <>
         <button
-          className={`h-[37px] text-sm text-black border border-black rounded-[10px] bg-[#FDFF89] hover:opacity-60 active:opacity-80 duration-300 ${classnames}`}
+          className={`h-[37px] flex items-center justify-center text-sm text-black border border-black rounded-[10px] bg-[#FDFF89] hover:opacity-60 active:opacity-80 duration-300 ${classnames}`}
           onClick={onClick}
         >
           {text}
@@ -30,7 +30,7 @@ export const Button: React.FC<ButtonType> = ({
     <>
       <Link
         href={to}
-        className={`h-[37px] text-sm text-black border border-black rounded-[10px] bg-[#FDFF89] hover:opacity-60 active:opacity-80 duration-300 ${classnames}`}
+        className={`h-[37px] flex items-center justify-center text-sm text-black border border-black rounded-[10px] bg-[#FDFF89] hover:opacity-60 active:opacity-80 duration-300 ${classnames}`}
       >
         {text}
       </Link>

@@ -41,7 +41,7 @@ export const Header = () => {
         <UserLink to="#prices" title="Ціни" />
         <UserLink to="#contacts" title="Контакти" />
         {/* <UserLink to="/PetVibe-1/#contactus" title="Відгуки" /> */}
-        {/* <UserLink to="todo" title="Запис Онлайн" /> */}
+        <UserLink to="https://b1220380.alteg.io/" title="Запис Онлайн" />
       </nav>
       <BurgerMenu />
     </header>

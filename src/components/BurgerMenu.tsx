@@ -51,6 +51,9 @@ export const BurgerMenu = () => {
           <DropdownMenuItem>
             <Link href="#contacts">Контакти</Link>
           </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="https://b1220380.alteg.io/">Запис Онлайн</Link>
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </nav>

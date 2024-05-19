@@ -20,12 +20,14 @@ export const Hero = () => {
           </h3>
           <div className="flex gap-5 sm:gap-7">
             <Button
-              type="button"
+              type="link"
+              to="#ourservices"
               text="Дивитися послуги"
               classnames="w-[160px] sm:w-[175px]"
             />
             <Button
-              type="button"
+              type="link"
+              to="https://b1220380.alteg.io/"
               text="Запис Онлайн"
               classnames="w-[160px] sm:w-[175px]"
             />

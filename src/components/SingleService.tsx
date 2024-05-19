@@ -21,7 +21,8 @@ export const SingleService: React.FC<SingleServiceType> = ({ title, listitems })
             classnames="w-[155px] sm:w-[173px]"
           /> */}
           <Button
-            type="button"
+            type="link"
+            to="https://b1220380.alteg.io/"
             text="Записатися Онлайн"
             classnames="w-[165px] sm:w-[187px]"
           />
