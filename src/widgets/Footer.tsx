@@ -5,7 +5,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="xl:w-1/2 w-screen opacity-50 p-4 mx-auto flex gap-6 flex-col md:flex-row justify-around items-center text-base tracking-wide font-serif border-t-2 border-black mt-6">
+    <footer id="contacts" className="xl:w-1/2 w-screen opacity-50 p-4 mx-auto flex gap-6 flex-col md:flex-row justify-around items-center text-base tracking-wide font-serif border-t-2 border-black mt-6">
       <div className="w-full flex flex-col">
         <address className="not-italic">
             <Link
