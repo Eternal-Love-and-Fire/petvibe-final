@@ -1,4 +1,5 @@
 // import { Bubbles } from "@/components/Bubbles";
+import { ImageSlider } from "@/components/ImageSlider";
 import { About } from "@/widgets/About";
 import { Footer } from "@/widgets/Footer";
 import { Header } from "@/widgets/Header";
@@ -21,8 +22,8 @@ export default function Home() {
     <About />
     <OurServices />
     <Prices />
+    <ImageSlider />
     <Footer />
-    
     </div>
   );
 }

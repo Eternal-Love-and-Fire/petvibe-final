@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
+import { CiPhone } from "react-icons/ci";
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,10 @@ export const BurgerMenu = () => {
   };
 
   return (
-    <nav className="ml-auto mr-8 lg:hidden block">
+    <nav className="ml-auto mr-8 lg:hidden flex gap-2 items-center">
+      <a href={`tel:+380986531088`}>
+        <CiPhone className="w-8 h-8 animate-pulse"/>
+      </a>
       <DropdownMenu onOpenChange={handleOpenChange}>
         <DropdownMenuTrigger className="outline-none flex flex-col gap-2 cursor-pointer">
           <div
