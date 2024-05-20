@@ -173,7 +173,7 @@ export const content: PricesType[] = [
     type: "complex",
     data: {
       title: "Комплексний догляд та стрижка собак",
-      listitems: const listitems = [
+      listitems: = [
   {
     type: "Йоркширський терʼєр",
     price: 1200,
