@@ -173,7 +173,7 @@ export const content: PricesType[] = [
     type: "complex",
     data: {
       title: "Комплексний догляд та стрижка собак",
-      listitems: = [
+      listitems: [
   {
     type: "Йоркширський терʼєр",
     price: 1200,
@@ -334,14 +334,14 @@ export const content: PricesType[] = [
     type: "Інші дизайнерські породи",
     price: 2000,
   },
-];
+],
     },
   },
   {
     type: "other",
     data: {
       title: "Інші послуги",
-      listitems: = [
+      listitems: [
   {
     type: "Стрижка інтимної зони",
     price: 200,
@@ -390,6 +390,6 @@ export const content: PricesType[] = [
     type: "Тримінг",
     price: "700/година",
   },
-];
+],
    },
-  },
+  };
