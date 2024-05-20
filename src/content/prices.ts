@@ -335,7 +335,6 @@ export const content: PricesType[] = [
     price: 2000,
   },
 ];
-
     },
   },
   {
@@ -392,3 +391,5 @@ export const content: PricesType[] = [
     price: "700/година",
   },
 ];
+   },
+  },
