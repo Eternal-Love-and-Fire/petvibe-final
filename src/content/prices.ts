@@ -8,7 +8,7 @@ export const content: PricesType[] = [
       listitems: [
         {
           type: "Йоркширський терʼєр",
-          price: 850,
+          price: 851,
         },
         {
           type: "Бівер йоркширський терʼєр",
