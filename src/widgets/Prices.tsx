@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 type ListItemType = {
   type: string;
-  price: number;
+  price: number | string;
 };
 
 export type PricesType = {
