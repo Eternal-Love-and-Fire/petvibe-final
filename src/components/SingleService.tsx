@@ -24,7 +24,7 @@ export const SingleService: React.FC<SingleServiceType> = ({ title, listitems })
             type="link"
             to="https://b1220380.alteg.io/"
             text="Записатися Онлайн"
-            classnames="w-[165px] sm:w-[187px] z-50"
+            classnames="w-[165px] sm:w-[187px]"
           />
         </div>
       </article>
