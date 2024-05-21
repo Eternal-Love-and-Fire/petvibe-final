@@ -34,7 +34,7 @@ export const Header = () => {
         show ? "translate-y-0" : "-translate-y-[72px]"
       } h-16 sm:px-4`}
     >
-      <Logo />
+      <Logo classnames="p-2"/>
       <nav className="hidden lg:flex w-full justify-end gap-8 pr-8">
         <UserLink to="#about" title="Про Нас" />
         <UserLink to="#ourservices" title="Послуги" />

@@ -38,7 +38,7 @@ export const ImageSlider = () => {
       removeArrowOnDeviceType={["tablet", "mobile"]}
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
-      className="my-8 max-h-[533px] overflow-hidden"
+      className="mt-8 max-h-[533px] overflow-hidden"
     >
       <div>
         <Image
