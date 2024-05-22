@@ -1,3 +1,4 @@
+import {nextui} from '@nextui-org/theme';
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -11,6 +12,7 @@ const config = {
     "./components/**/*.{ts,tsx,js,jsx,mdx}",
     "./app/**/*.{ts,tsx,js,jsx,mdx}",
     "./src/**/*.{ts,tsx,js,jsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/(pagination|table|checkbox|spacer).js"
   ],
   prefix: "",
   theme: {
@@ -38,7 +40,7 @@ const config = {
       },
     },
   },
-  plugins: [addVariablesForColors, tailwindcssAnimate],
+  plugins: [addVariablesForColors, tailwindcssAnimate,nextui()],
 };
 
 // @ts-ignore: Unreachable code error

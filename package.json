@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/pagination": "^2.0.30",
+    "@nextui-org/system": "^2.1.2",
+    "@nextui-org/table": "^2.0.33",
+    "@nextui-org/theme": "^2.2.3",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",

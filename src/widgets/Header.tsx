@@ -14,11 +14,7 @@ export const Header = () => {
     const handleScroll = () => {
       const currentScrollPosition = window.pageYOffset;
 
-      if (previousScrollPosition < currentScrollPosition) {
-        setShow(false);
-      } else {
-        setShow(true);
-      }
+      setShow(previousScrollPosition >= currentScrollPosition);
 
       previousScrollPosition = currentScrollPosition;
     };
@@ -28,13 +24,14 @@ export const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header
       className={`fixed top-2 left-2 sm:left-4 right-2 sm:right-4 flex justify-around items-center rounded-[20px] border border-black bg-[#CCF4FF] z-50 transition-transform duration-300 ${
         show ? "translate-y-0" : "-translate-y-[72px]"
       } h-16 sm:px-4`}
     >
-      <Logo classnames="p-2"/>
+      <Logo classnames="p-2" />
       <nav className="hidden lg:flex w-full justify-end gap-8 pr-8">
         <UserLink to="#about" title="Про Нас" />
         <UserLink to="#ourservices" title="Послуги" />

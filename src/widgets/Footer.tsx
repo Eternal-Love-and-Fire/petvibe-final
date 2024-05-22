@@ -1,3 +1,4 @@
+
 import { Logo } from "@/components/Logo";
 import Link from "next/link";
 import { BsInstagram, BsTelegram } from "react-icons/bs";
@@ -8,7 +9,7 @@ export const Footer = () => {
   return (
     <footer id="contacts" className="py-4">
       <div className="p-4 pl-2 flex flex-col sm:flex-row sm:justify-around sm:items-center  gap-4">
-        <Logo classnames="-pl-2" />
+        <Logo classnames="-pl-2"/>
         <div className="flex gap-2 sm:gap-4 sm:text-4xl text-3xl">
           <a
             target="_blank"

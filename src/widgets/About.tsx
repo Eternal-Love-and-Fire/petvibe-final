@@ -1,13 +1,12 @@
-import Image from "next/image";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 
 export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-[647px] mt-[49px] mx-4 relative flex flex-wrap items-center px-4 xl:px-0 pt-[34px] xl:pt-0 sm:justify-center gap-6 2xl:gap-[134px] sm:flex-row flex-col border border-black text-black rounded-[20px] font-medium bg-[#CCF4FF]"
+      className="min-h-[648px] mt-[48px] mx-4 px-4 xl:px-0 pt-8 xl:pt-0 relative flex flex-wrap items-center sm:justify-center gap-6 2xl:gap-32 sm:flex-row flex-col border border-black text-black rounded-[20px] font-medium bg-[#CCF4FF]"
     >
-      <div className="w-[280px] h-[50px] absolute left-[-2px] md:left-[103px] top-[-28px] flex items-center justify-center rounded-[10px] border border-black bg-[#CCDDFF]">
+      <div className="w-72 h-12 absolute -left-0.5 md:left-24 -top-7 flex items-center justify-center rounded-[10px] border border-black bg-[#CCDDFF]">
         <span className="text-[30px] tracking-wide">Про нас</span>
       </div>
       <article className="max-w-[578px] mt-4 sm:mt-0 flex flex-col gap-5 text-sm sm:text-base font-medium">
@@ -42,7 +41,7 @@ export const About = () => {
         </div>
       </article>
       <article>
-        <div className="mb-4 sm:mb-0">
+        <div className="mb-4 xl:mb-0">
           <DirectionAwareHover>
             <p className="font-bold text-xl">Тут може бути ваш любимець</p>
           </DirectionAwareHover>
