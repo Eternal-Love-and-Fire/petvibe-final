@@ -1,4 +1,3 @@
-
 import { Logo } from "@/components/Logo";
 import Link from "next/link";
 import { BsInstagram, BsTelegram } from "react-icons/bs";
@@ -52,8 +51,11 @@ export const Footer = () => {
               просп. Миколи Бажана 12, Київ
             </a>
           </address>
-          <a href="mailto:petvibe.info@gmail.com" target="_blank">
-            petvibe.info@gmail.com
+          <a href="mailto:petvibe.kyiv@gmail.com" target="_blank">
+            petvibe.kyiv@gmail.com
+          </a>
+          <a href="tel:+380986531088" className="mt-2">
+            +380 98 653 10 88
           </a>
           <time className="flex gap-1">
             <p>Пн-Нд: 10:00 - 20:00</p>
